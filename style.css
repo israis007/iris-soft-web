@@ -561,7 +561,7 @@
     background: var(--accent-indigo-glow);
   }
 
-  /* Architectures Cards */
+  /* Architectures Cards (Consultoria - Bigger Icons & Titles doubled to 2rem) */
   .arch-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -569,15 +569,16 @@
   }
 
   .arch-card {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: center;
   }
 
   .arch-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
     background: var(--accent-indigo-glow);
     border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
@@ -585,23 +586,33 @@
     justify-content: center;
     color: var(--accent-indigo);
     flex-shrink: 0;
+    transition: var(--transition-smooth);
+  }
+
+  .arch-icon svg {
+    width: 30px;
+    height: 30px;
   }
 
   .arch-card:hover .arch-icon {
     background: var(--gradient-hero);
     color: white;
+    transform: scale(1.1);
+    box-shadow: var(--shadow-glow-indigo);
   }
 
   .arch-card h4 {
-    font-size: 1.15rem;
+    font-size: 2rem; /* Twice the size of body text */
+    font-weight: 700;
     margin-bottom: 0.5rem;
   }
 
   .arch-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
   }
 
-  /* Timeline */
+  /* Timeline (Titles doubled to 2rem) */
   .timeline-container {
     margin-top: 8rem;
   }
@@ -686,7 +697,8 @@
   }
 
   .timeline-content h4 {
-    font-size: 1.25rem;
+    font-size: 2rem; /* Twice the size of body text */
+    font-weight: 700;
     margin-bottom: 0.25rem;
   }
 
@@ -726,7 +738,7 @@
   }
 
   /* ==========================================================================
-     Digital Marketing Creative Studio
+     Digital Marketing Creative Studio (Titles doubled to 2rem, Bigger Icons)
      ========================================================================== */
   .marketing-grid {
     display: grid;
@@ -742,14 +754,15 @@
   }
 
   .service-card {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: center;
   }
 
   .service-icon {
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
     border-radius: 16px;
     background: var(--accent-cyan-glow);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -758,21 +771,30 @@
     justify-content: center;
     color: var(--accent-cyan);
     flex-shrink: 0;
+    transition: var(--transition-smooth);
+  }
+
+  .service-icon svg {
+    width: 34px;
+    height: 34px;
   }
 
   .service-card:hover .service-icon {
     background: var(--gradient-hero);
     color: white;
+    transform: scale(1.1);
+    box-shadow: var(--shadow-glow-cyan);
   }
 
   .service-info h3 {
-    font-size: 1.25rem;
+    font-size: 2rem; /* Twice the size of body text */
+    font-weight: 700;
     margin-bottom: 0.5rem;
   }
 
   .service-info p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
   }
 
   .marketing-visual {
@@ -842,7 +864,7 @@
   }
 
   /* ==========================================================================
-     CasCam & Product Showcase
+     Easy POS LAN & Product Showcase (Renamed completely from CasCam)
      ========================================================================== */
   .product-showcase {
     margin-top: 2rem;
@@ -875,7 +897,7 @@
     scroll-snap-align: start;
   }
 
-  .cascam-card {
+  .easypos-card {
     padding: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -883,12 +905,12 @@
     align-items: center;
   }
 
-  .cascam-info h3 {
+  .easypos-info h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
-  .cascam-tagline {
+  .easypos-tagline {
     font-size: 1rem;
     color: var(--accent-indigo);
     font-weight: 700;
@@ -897,19 +919,19 @@
     letter-spacing: 0.05em;
   }
 
-  .cascam-desc {
+  .easypos-desc {
     font-size: 0.95rem;
     margin-bottom: 2rem;
   }
 
-  .cascam-features {
+  .easypos-features {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     margin-bottom: 2rem;
   }
 
-  .cascam-feature {
+  .easypos-feature {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -918,12 +940,12 @@
     color: var(--text-primary);
   }
 
-  .cascam-feature svg {
+  .easypos-feature svg {
     color: var(--accent-cyan);
     flex-shrink: 0;
   }
 
-  .cascam-visual {
+  .easypos-visual {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1085,13 +1107,60 @@
   }
 
   /* ==========================================================================
-     Contact Section
+     Clientes Section (Titles doubled to 2rem)
+     ========================================================================== */
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .client-badge {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .client-logo-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .client-badge h4 {
+    font-size: 2rem; /* Twice the size of body text */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .client-check {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+  }
+
+  /* ==========================================================================
+     Contact Section (Massive icons grid & Clean aesthetic)
      ========================================================================== */
   .contact-grid {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 4rem;
-    align-items: start;
+    align-items: center;
   }
 
   .contact-info-cards {
@@ -1100,32 +1169,47 @@
     gap: 1.5rem;
   }
 
-  .contact-info-card {
-    padding: 2rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
+  .contact-section-h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .contact-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: var(--accent-indigo-glow);
-    color: var(--accent-indigo);
+  .contact-icons-large-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .contact-large-icon-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    cursor: pointer;
   }
 
-  .contact-info-card h4 {
-    font-size: 1.05rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .contact-info-card p {
-    font-size: 0.9rem;
+  .contact-large-icon-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: currentColor;
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 0 10px 30px var(--accent-glow);
   }
 
   /* Form */
@@ -1223,155 +1307,6 @@
   .footer-copy {
     font-size: 0.85rem;
     color: var(--text-muted);
-  }
-
-  /* Hero Services Badges Grid */
-  .hero-services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2.5rem 0 3.5rem;
-    width: 100%;
-  }
-
-  .hero-service-badge {
-    padding: 1.25rem 1.5rem;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-  }
-
-  .hero-service-badge h5 {
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-    font-family: var(--font-heading);
-  }
-
-  .hero-service-badge p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    color: var(--text-secondary);
-  }
-
-  .badge-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
-    flex-shrink: 0;
-  }
-
-  /* Clientes Section Ecosistema Grid */
-  .clients-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  .client-badge {
-    padding: 2.5rem 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-  }
-
-  .client-logo-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
-    color: var(--text-primary);
-    border: 1px solid var(--border-color);
-    margin-bottom: 1.5rem;
-  }
-
-  .client-badge h4 {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .client-check {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent-cyan);
-  }
-
-  /* Contact Link Cards & Social Icons */
-  .contact-link-card {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1.8rem;
-    align-items: center;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: var(--transition-smooth);
-    border: 1px solid var(--border-color);
-  }
-
-  .contact-link-card:hover {
-    border-color: var(--accent-indigo);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-glow-indigo);
-    background: rgba(255, 255, 255, 0.02);
-  }
-
-  .social-links-container {
-    padding: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-  }
-
-  .social-links-container h4 {
-    font-size: 1.05rem;
-    text-align: center;
-    font-family: var(--font-heading);
-    font-weight: 700;
-  }
-
-  .social-icons-row {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-  }
-
-  .social-circle-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    transition: var(--transition-smooth);
-    cursor: pointer;
-  }
-
-  .social-circle-btn:hover {
-    background: var(--gradient-hero);
-    color: white;
-    transform: scale(1.1);
-    box-shadow: var(--shadow-glow-indigo);
   }
 }
 
@@ -1503,19 +1438,24 @@
       right: auto !important;
     }
 
-    .cascam-card {
+    .easypos-card {
       grid-template-columns: 1fr;
       text-align: center;
       padding: 2rem;
     }
 
-    .cascam-features {
+    .easypos-features {
       align-items: center;
     }
 
     .contact-grid {
       grid-template-columns: 1fr;
       gap: 3rem;
+    }
+
+    .contact-icons-large-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
     }
   }
 
