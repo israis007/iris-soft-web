@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Iris Soft - Agencia boutique de desarrollo de aplicaciones móviles y marketing digital impulsada por inteligencia artificial. Creamos soluciones robustas e interactivas para iOS, Android y Flutter.">
+  <meta name="keywords" content="Iris Soft, Desarrollo de Apps, Flutter, Android, iOS, Marketing Digital, IA, Inteligencia Artificial, Kotlin, Swift, Israel Ramirez Islas, Quetzalcoatl Sistemas, Legalario">
+  <meta name="author" content="Iris Soft / Israel Ramírez Islas">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Iris Soft | Premium App Development & Digital Marketing">
+  <meta property="og:description" content="Agencia boutique de desarrollo móvil nativo y multiplataforma con integraciones de IA.">
+  <meta property="og:url" content="https://iris-soft.web.app">
+  
+  <title>Iris Soft | Premium App Development & Digital Marketing</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Header
+       ========================================================================== -->
+  <header class="main-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="logo-anchor">
+        <span class="logo-icon"></span>
+        Iris Soft
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu" aria-label="Menú principal">
+        <a href="#about" class="nav-link">Quiénes Somos</a>
+        <a href="#mobile-dev" class="nav-link">Desarrollo Móvil</a>
+        <a href="#marketing" class="nav-link">Marketing Digital</a>
+        <a href="#showcase" class="nav-link">Productos</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema visual" title="Cambiar tema">
+          <!-- Light Mode Icon (Sun) -->
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Dark Mode Icon (Moon) -->
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <h1>Diseñamos el Futuro de las <span class="hero-accent">Aplicaciones Móviles</span></h1>
+        <p class="hero-subtitle">Creamos arquitecturas móviles impecables y estrategias de marketing digital que dominan el mercado. Ingeniado con pasión humana, potenciado por Inteligencia Artificial.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            Trabajemos Juntos
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#showcase" class="btn btn-secondary">Ver Portafolio</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="tech-orb"></div>
+        <div class="tech-orb-inner"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         AI-Accelerated Workflow Banner
+         ========================================================================== -->
+    <div class="ai-banner-container reveal-on-scroll">
+      <div class="ai-banner glass-card">
+        <div class="ai-banner-content">
+          <span class="ai-tag">Ingeniería Aumentada</span>
+          <h2 class="ai-banner-title">Desarrollo Acelerado por IA</h2>
+          <p class="ai-banner-desc">En Iris Soft combinamos la genialidad técnica de arquitecturas robustas manuales con herramientas de IA avanzadas como Google Gemini. Esto nos permite acelerar los tiempos de desarrollo en un 40% y reducir costos operativos, garantizando códigos limpios, testeados y altamente eficientes para nuestros socios comerciales.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Who We Are / About Section
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="about">
+      <div class="section-header">
+        <h2 class="section-title">Quiénes Somos</h2>
+        <p class="section-subtitle">Iris Soft es una firma digital boutique dirigida por Israel Ramírez Islas, arquitecto de software móvil y especialista digital.</p>
+      </div>
+      
+      <div class="app-dev-grid">
+        <div class="dev-intro">
+          <h3>Ingeniería de Clase Mundial</h3>
+          <p>Con más de 6 años de experiencia liderando el desarrollo de aplicativos en el ecosistema móvil, diseñamos soluciones nativas y multiplataforma robustas. Nuestro enfoque prioriza la escalabilidad, la velocidad de sincronización de datos y una experiencia de usuario fascinante.</p>
+          <p>Dominamos tecnologías críticas como Kotlin, Swift, Dart y Python, permitiéndonos crear plataformas completas que resuelven problemas del mundo real en tiempo récord.</p>
+          
+          <div class="tech-pills">
+            <span class="pill">Android SDK</span>
+            <span class="pill">iOS Swift</span>
+            <span class="pill">Flutter</span>
+            <span class="pill">Kotlin</span>
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+            <span class="pill">Firebase Suite</span>
+            <span class="pill">Room / SQLite</span>
+          </div>
+        </div>
+
+        <div class="arch-cards">
+          <!-- Architecture Card 1 -->
+          <div class="arch-card glass-card">
+            <div class="arch-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="15" y1="3" x2="15" y2="21"></line>
+              </svg>
+            </div>
+            <div>
+              <h4>Clean Architecture & SOLID</h4>
+              <p>Estructuramos proyectos desacoplados e independientes del framework, lo que facilita realizar pruebas unitarias y extender funcionalidades sin riesgo a regresiones.</p>
+            </div>
+          </div>
+
+          <!-- Architecture Card 2 -->
+          <div class="arch-card glass-card">
+            <div class="arch-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Patrones Reactivos (MVVM / MVI)</h4>
+              <p>Manejo de estados inmutables y flujos unidireccionales de datos para interfaces fluidas utilizando Android Jetpack, Compose y Riverpod.</p>
+            </div>
+          </div>
+
+          <!-- Architecture Card 3 -->
+          <div class="arch-card glass-card">
+            <div class="arch-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.43 18.25A6 6 0 1 1 12 6c3 0 5.62 1.68 6.94 4.14"></path>
+                <path d="M12 14.75a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5Z"></path>
+                <path d="M16 11h6v6"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Sincronización Offline-First</h4>
+              <p>Diseño de bases de datos locales (Room, Hive) con sincronización inteligente en segundo plano. Los datos permanecen seguros e interactivos aún sin conectividad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         App Development - Professional Timeline
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="mobile-dev" style="border-top: 1px solid var(--border-color);">
+      <h2 class="timeline-title">Trayectoria Profesional y Enlaces Verificados</h2>
+      
+      <div class="timeline-path">
+        <!-- Job 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023 - Actualidad</span>
+            <h4>Desarrollador Móvil</h4>
+            <span class="timeline-company">Quetzalcóatl Sistemas</span>
+            <p>Migración de aplicativos críticos a Android 13 bajo MVVM + Clean Architecture. Integración de SDKs bancarios y terminales POS de cobro digital (Chip/NFC). Diseño de autenticación biométrica y bases de datos Room con sincronización offline-first.</p>
+            <a href="https://www.qsistemas.com.mx/" target="_blank" rel="noopener noreferrer" class="verified-link">
+              Visitar Sitio Oficial Verificado
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2024 - 2025</span>
+            <h4>Android Developer</h4>
+            <span class="timeline-company">Legalario</span>
+            <p>Refactorización integral de Java a Kotlin en aplicaciones masivas y presenciales de firma digital de documentos. Desarrollo e implementación de SDKs Android altamente personalizables para clientes corporativos. Modelos de TensorFlow Lite para reconocimiento de documentos.</p>
+            <a href="https://www.legalario.com/" target="_blank" rel="noopener noreferrer" class="verified-link">
+              Visitar Sitio Oficial Verificado
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2023</span>
+            <h4>Android Developer Sr</h4>
+            <span class="timeline-company">Softtek</span>
+            <p>Certificación en Backbase. Resolución y depuración de bugs en aplicativos bancarios de alta transaccionalidad, garantizando un 80% de calidad bajo análisis automatizados en SonarQube. GitFlow estructurado.</p>
+            <a href="https://www.softtek.com/" target="_blank" rel="noopener noreferrer" class="verified-link">
+              Visitar Sitio Oficial Verificado
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2020 - 2023</span>
+            <h4>Android Developer Sr</h4>
+            <span class="timeline-company">Qualtop (Gentera / Compartamos Banco)</span>
+            <p>Desarrollo desde cero del aplicativo de Banca Móvil y publicación exitosa. Implementación del módulo de contactos, transferencias y pago de servicios. Soporte integral al ecosistema de Crédito Grupal Digital.</p>
+            <a href="https://www.gentera.com.mx/" target="_blank" rel="noopener noreferrer" class="verified-link">
+              Visitar Sitio Oficial Verificado
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">2019 - 2020</span>
+            <h4>Android Developer</h4>
+            <span class="timeline-company">Global Hitss (Telcel)</span>
+            <p>Soporte y diseño de nuevas funciones en la aplicación corporativa interna para la renovación de Planes Tarifarios. Integración experimental de Huawei Mobile Services (HMS) en entornos de producción.</p>
+            <a href="https://www.globalhitss.com/" target="_blank" rel="noopener noreferrer" class="verified-link">
+              Visitar Sitio Oficial Verificado
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Digital Marketing Section
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="marketing" style="border-top: 1px solid var(--border-color);">
+      <div class="section-header">
+        <h2 class="section-title">Estudio Creativo y Marketing Digital</h2>
+        <p class="section-subtitle">No solo escribimos código, creamos identidades digitales completas que convierten y cautivan a tus audiencias.</p>
+      </div>
+
+      <div class="marketing-grid">
+        <div class="marketing-services">
+          <!-- Service 1 -->
+          <div class="service-card glass-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <div class="service-info">
+              <h3>Diseño Gráfico & Canva Pro</h3>
+              <p>Diseñamos piezas gráficas comerciales, mockups profesionales y banners publicitarios de alto impacto, garantizando una estética de marca impecable.</p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glass-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7a2 2 0 0 0-2-2h-4l-3-3H10L7 5H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7Z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <div class="service-info">
+              <h3>Edición Fotográfica y Mejora con IA</h3>
+              <p>Procesamos y mejoramos imágenes de producto o retratos institucionales utilizando modelos de IA generativa de punta para lograr nitidez y luz impecables.</p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glass-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="7" y1="2" x2="7" y2="22"></line>
+                <line x1="17" y1="2" x2="17" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="2" y1="7" x2="7" y2="7"></line>
+                <line x1="2" y1="17" x2="7" y2="17"></line>
+                <line x1="17" y1="17" x2="22" y2="17"></line>
+                <line x1="17" y1="7" x2="22" y2="7"></line>
+              </svg>
+            </div>
+            <div class="service-info">
+              <h3>Animación & Vídeo IA</h3>
+              <p>Ideación y producción de micro-animaciones, vídeos explicativos y contenido cinemático optimizado para redes y conversiones impulsado por herramientas generativas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="marketing-visual">
+          <div class="marketing-box glass-card">
+            <div class="marketing-canvas-bg"></div>
+            <div class="floating-asset floating-asset-1">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 22 22 22"></polygon></svg>
+              Branding
+            </div>
+            <div class="floating-asset floating-asset-2">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              High Converting
+            </div>
+            <div class="floating-asset floating-asset-3">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m12 3-1.912 5.886H3.894l4.948 3.596L6.93 18.368 12 14.772l5.07 3.596-1.912-5.886 4.948-3.596h-6.194L12 3Z"></path></svg>
+              AI-Driven Design
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Product Showcase & CasCam
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="showcase" style="border-top: 1px solid var(--border-color);">
+      <div class="section-header">
+        <h2 class="section-title">Productos y Soluciones Propias</h2>
+        <p class="section-subtitle">Diseñamos plataformas disruptivas listas para ser desplegadas en negocios.</p>
+      </div>
+
+      <div class="product-showcase">
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            
+            <!-- Slide 1: CasCam -->
+            <div class="carousel-slide" id="slide-cascam">
+              <div class="cascam-card glass-card">
+                <div class="cascam-info">
+                  <span class="ai-tag">Cámara Inteligente</span>
+                  <h3>CasCam Suite</h3>
+                  <div class="cascam-tagline">Solución de captura móvil inteligente</div>
+                  <p class="cascam-desc">Una suite especializada diseñada para convertir cualquier tablet o smartphone en un escáner y recolector inteligente de alta precisión, completamente integrado con terminales de cobro POS Android.</p>
+                  
+                  <div class="cascam-features">
+                    <div class="cascam-feature">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Escaneo de códigos 1D / 2D por cámara a nivel nativo
+                    </div>
+                    <div class="cascam-feature">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Optimización automática de luz y contraste con IA local
+                    </div>
+                    <div class="cascam-feature">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Sincronización en tiempo real con bases de datos en la nube
+                    </div>
+                  </div>
+
+                  <a href="#contact" class="btn btn-primary">Solicitar Demostración</a>
+                </div>
+
+                <div class="cascam-visual">
+                  <div class="mobile-mockup">
+                    <div class="mockup-screen">
+                      <div class="mockup-header">
+                        <span>CasCam v1.2</span>
+                        <span>LIVE</span>
+                      </div>
+                      <div class="mockup-camera">
+                        <!-- Simulated scanner grid / box -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color: rgba(255, 255, 255, 0.2);">
+                          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                        </svg>
+                      </div>
+                      <div class="mockup-footer">
+                        <div class="mockup-btn">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+                        </div>
+                        <div class="mockup-btn mockup-btn-primary">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <div class="mockup-btn">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Upcoming Projects -->
+            <div class="carousel-slide" id="slide-upcoming">
+              <div class="upcoming-card glass-card">
+                <div class="upcoming-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                  </svg>
+                </div>
+                <h3>Próximos Lanzamientos</h3>
+                <p>Estamos diseñando una nueva plataforma automatizada de reportes comerciales y un sistema de control administrativo adaptado para Pymes mexicanas. Mantente conectado.</p>
+                <a href="#contact" class="btn btn-secondary">Suscribirme a Novedades</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Slide anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn" id="carousel-next" aria-label="Slide siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Form & Section
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="contact" style="border-top: 1px solid var(--border-color);">
+      <div class="section-header">
+        <h2 class="section-title">Iniciemos un Proyecto</h2>
+        <p class="section-subtitle">¿Tienes una idea de aplicación móvil o necesitas optimizar la identidad visual de tu negocio? Escríbenos.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <!-- Info Card 1 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Contacto Directo</h4>
+              <p>+52 56 5905 8943</p>
+            </div>
+          </div>
+
+          <!-- Info Card 2 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m4 4 7.07 7.07a1.35 1.35 0 0 0 1.86 0L20 4"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"></rect>
+              </svg>
+            </div>
+            <div>
+              <h4>Correo Electrónico</h4>
+              <p>israis007@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Info Card 3 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4>Ubicación</h4>
+              <p>México (100% Remoto)</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="project-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre Completo</label>
+            <input type="text" id="name" class="form-input" required minlength="3" placeholder="Escribe tu nombre completo">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Correo Corporativo</label>
+            <input type="email" id="email" class="form-input" required placeholder="correo@tuempresa.com">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Háblanos de tu proyecto</label>
+            <textarea id="message" class="form-input" required minlength="10" placeholder="¿Qué solución móvil o digital necesitas desarrollar?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-icon" style="width:24px; height:24px; box-shadow:none;"></span>
+        Iris Soft
+      </div>
+      
+      <div class="footer-links">
+        <a href="#about" class="footer-link">Quiénes Somos</a>
+        <a href="#mobile-dev" class="footer-link">Desarrollo Móvil</a>
+        <a href="#marketing" class="footer-link">Marketing Digital</a>
+        <a href="#showcase" class="footer-link">Productos</a>
+      </div>
+      
+      <div class="footer-copy">
+        &copy; 2026 Iris Soft. Todos los derechos reservados. Diseñado por Iris Soft & Gemini.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
