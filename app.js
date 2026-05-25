@@ -112,7 +112,7 @@ function initScrollReveal() {
 }
 
 /* ==========================================================================
-   CasCam Product Carousel Engine
+   Easy POS LAN Product Carousel Engine
    ========================================================================== */
 function initCarousel() {
   const track = document.getElementById('carousel-track');
