@@ -1224,6 +1224,155 @@
     font-size: 0.85rem;
     color: var(--text-muted);
   }
+
+  /* Hero Services Badges Grid */
+  .hero-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0 3.5rem;
+    width: 100%;
+  }
+
+  .hero-service-badge {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+  }
+
+  .hero-service-badge h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-heading);
+  }
+
+  .hero-service-badge p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+  }
+
+  .badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+  }
+
+  /* Clientes Section Ecosistema Grid */
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .client-badge {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .client-logo-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .client-badge h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .client-check {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+  }
+
+  /* Contact Link Cards & Social Icons */
+  .contact-link-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.8rem;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+  }
+
+  .contact-link-card:hover {
+    border-color: var(--accent-indigo);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow-indigo);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .social-links-container {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+  }
+
+  .social-links-container h4 {
+    font-size: 1.05rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .social-circle-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+
+  .social-circle-btn:hover {
+    background: var(--gradient-hero);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: var(--shadow-glow-indigo);
+  }
 }
 
 @layer utilities {

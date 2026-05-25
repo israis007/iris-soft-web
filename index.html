@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Iris Soft - Agencia boutique de desarrollo de aplicaciones móviles y marketing digital impulsada por inteligencia artificial. Creamos soluciones robustas e interactivas para iOS, Android y Flutter.">
-  <meta name="keywords" content="Iris Soft, Desarrollo de Apps, Flutter, Android, iOS, Marketing Digital, IA, Inteligencia Artificial, Kotlin, Swift, Israel Ramirez Islas, Quetzalcoatl Sistemas, Legalario">
+  <meta name="description" content="Iris Soft - Soluciones de desarrollo móvil nativo/multiplataforma, diseño web, marketing digital y staffing corporativo acelerado por Inteligencia Artificial.">
+  <meta name="keywords" content="Iris Soft, Desarrollo de Apps, Flutter, Android, iOS, Staffing TI, Reclutamiento Móvil, Corregir Bugs, Marketing Digital, IA, Israel Ramírez Islas, Quetzalcóatl Sistemas, Legalario">
   <meta name="author" content="Iris Soft / Israel Ramírez Islas">
   
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Iris Soft | Premium App Development & Digital Marketing">
-  <meta property="og:description" content="Agencia boutique de desarrollo móvil nativo y multiplataforma con integraciones de IA.">
-  <meta property="og:url" content="https://iris-soft.web.app">
+  <meta property="og:title" content="Iris Soft | Desarrollo Móvil, Web, Diseño & Staffing Corporativo">
+  <meta property="og:description" content="Soluciones de desarrollo de software desde cero, consultoría y marketing digital potenciado por Inteligencia Artificial.">
+  <meta property="og:image" content="screenshot.png">
+  <meta property="og:url" content="https://israis007.github.io/iris-soft-web/">
   
-  <title>Iris Soft | Premium App Development & Digital Marketing</title>
+  <title>Iris Soft | Desarrollo de Apps, Web, Creative Studio & Staffing</title>
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
@@ -31,10 +32,11 @@
       </a>
       
       <nav class="nav-menu" id="nav-menu" aria-label="Menú principal">
-        <a href="#about" class="nav-link">Quiénes Somos</a>
-        <a href="#mobile-dev" class="nav-link">Desarrollo Móvil</a>
-        <a href="#marketing" class="nav-link">Marketing Digital</a>
-        <a href="#showcase" class="nav-link">Productos</a>
+        <a href="#hero" class="nav-link">Inicio</a>
+        <a href="#colaboraciones" class="nav-link">Colaboraciones</a>
+        <a href="#marketing" class="nav-link">Diseño y Marketing</a>
+        <a href="#showcase" class="nav-link">Nuestras Apps</a>
+        <a href="#clientes" class="nav-link">Clientes</a>
         <a href="#contact" class="nav-link">Contacto</a>
       </nav>
       
@@ -63,12 +65,46 @@
 
   <main>
     <!-- ==========================================================================
-         Hero Section
+         Hero / Inicio Section
          ========================================================================== -->
     <section class="hero-section" id="hero">
       <div class="hero-content">
-        <h1>Diseñamos el Futuro de las <span class="hero-accent">Aplicaciones Móviles</span></h1>
-        <p class="hero-subtitle">Creamos arquitecturas móviles impecables y estrategias de marketing digital que dominan el mercado. Ingeniado con pasión humana, potenciado por Inteligencia Artificial.</p>
+        <h1>Soluciones de <span class="hero-accent">Software Móvil</span>, Diseño y Consultoría TI</h1>
+        <p class="hero-subtitle">Desarrollamos aplicaciones móviles premium y páginas web desde cero. Apoyamos a empresas a cubrir vacantes críticas de desarrollo, destrabar proyectos retrasados y resolver bugs complejos de forma ágil y segura.</p>
+        
+        <!-- Interactive Service Cards inside Hero to highlight our capabilities -->
+        <div class="hero-services-grid">
+          <div class="hero-service-badge glass-card">
+            <div class="badge-icon" style="color: var(--accent-indigo);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <div>
+              <h5>Desarrollo de Apps Nativas / Híbridas</h5>
+              <p>Android, iOS y Flutter creados desde cero con arquitecturas escalables.</p>
+            </div>
+          </div>
+
+          <div class="hero-service-badge glass-card">
+            <div class="badge-icon" style="color: var(--accent-cyan);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+            </div>
+            <div>
+              <h5>Staffing & Consultoría Técnica</h5>
+              <p>Cubrimos vacantes móviles, rescatamos proyectos y resolvemos bugs.</p>
+            </div>
+          </div>
+
+          <div class="hero-service-badge glass-card">
+            <div class="badge-icon" style="color: var(--accent-magenta);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            </div>
+            <div>
+              <h5>Estudio Creativo & Marketing</h5>
+              <p>Desarrollo Web, Diseño Gráfico, Animaciones, Vídeos y Retoque de Fotos.</p>
+            </div>
+          </div>
+        </div>
+
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">
             Trabajemos Juntos
@@ -77,7 +113,7 @@
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a href="#showcase" class="btn btn-secondary">Ver Portafolio</a>
+          <a href="#showcase" class="btn btn-secondary">Nuestras Apps</a>
         </div>
       </div>
       
@@ -93,26 +129,26 @@
     <div class="ai-banner-container reveal-on-scroll">
       <div class="ai-banner glass-card">
         <div class="ai-banner-content">
-          <span class="ai-tag">Ingeniería Aumentada</span>
-          <h2 class="ai-banner-title">Desarrollo Acelerado por IA</h2>
-          <p class="ai-banner-desc">En Iris Soft combinamos la genialidad técnica de arquitecturas robustas manuales con herramientas de IA avanzadas como Google Gemini. Esto nos permite acelerar los tiempos de desarrollo en un 40% y reducir costos operativos, garantizando códigos limpios, testeados y altamente eficientes para nuestros socios comerciales.</p>
+          <span class="ai-tag">Tecnología de Vanguardia</span>
+          <h2 class="ai-banner-title">Potenciado por Inteligencia Artificial</h2>
+          <p class="ai-banner-desc">En Iris Soft nos posicionamos al frente del auge tecnológico. Integramos herramientas de Inteligencia Artificial avanzadas (como Google Gemini) en cada etapa de nuestro flujo. Esto nos permite acelerar el desarrollo web y de código móvil en un 40%, optimizar campañas de marketing digital, y automatizar el retoque fotográfico y la generación de contenido audiovisual de altísima calidad en tiempo récord.</p>
         </div>
       </div>
     </div>
 
     <!-- ==========================================================================
-         Who We Are / About Section
+         Colaboraciones / About Section
          ========================================================================== -->
-    <section class="section-container reveal-on-scroll" id="about">
+    <section class="section-container reveal-on-scroll" id="colaboraciones">
       <div class="section-header">
-        <h2 class="section-title">Quiénes Somos</h2>
-        <p class="section-subtitle">Iris Soft es una firma digital boutique dirigida por Israel Ramírez Islas, arquitecto de software móvil y especialista digital.</p>
+        <h2 class="section-title">Quiénes Somos & Colaboraciones</h2>
+        <p class="section-subtitle">Iris Soft es un estudio digital boutique liderado por Israel Ramírez Islas, arquitecto de software móvil con una sólida trayectoria en empresas líderes.</p>
       </div>
       
       <div class="app-dev-grid">
         <div class="dev-intro">
-          <h3>Ingeniería de Clase Mundial</h3>
-          <p>Con más de 6 años de experiencia liderando el desarrollo de aplicativos en el ecosistema móvil, diseñamos soluciones nativas y multiplataforma robustas. Nuestro enfoque prioriza la escalabilidad, la velocidad de sincronización de datos y una experiencia de usuario fascinante.</p>
+          <h3>Ingeniería y Desarrollo Móvil</h3>
+          <p>Con más de 6 años de experiencia en el desarrollo de software nativo y multiplataforma, nos especializamos en diseñar arquitecturas desacopladas y de alto rendimiento. Apoyamos a las organizaciones a solventar cuellos de botella técnicos, resolviendo bugs complejos y entregando código robusto.</p>
           <p>Dominamos tecnologías críticas como Kotlin, Swift, Dart y Python, permitiéndonos crear plataformas completas que resuelven problemas del mundo real en tiempo récord.</p>
           
           <div class="tech-pills">
@@ -139,7 +175,7 @@
             </div>
             <div>
               <h4>Clean Architecture & SOLID</h4>
-              <p>Estructuramos proyectos desacoplados e independientes del framework, lo que facilita realizar pruebas unitarias y extender funcionalidades sin riesgo a regresiones.</p>
+              <p>Desarrollo estructurado, testeable e independiente del framework para una escalabilidad a largo plazo.</p>
             </div>
           </div>
 
@@ -153,8 +189,8 @@
               </svg>
             </div>
             <div>
-              <h4>Patrones Reactivos (MVVM / MVI)</h4>
-              <p>Manejo de estados inmutables y flujos unidireccionales de datos para interfaces fluidas utilizando Android Jetpack, Compose y Riverpod.</p>
+              <h4>Refactorización & Resolución de Bugs</h4>
+              <p>Intervención ágil en códigos legados, migración de lenguaje (Java a Kotlin) y eliminación total de crashes en producción.</p>
             </div>
           </div>
 
@@ -169,19 +205,13 @@
             </div>
             <div>
               <h4>Sincronización Offline-First</h4>
-              <p>Diseño de bases de datos locales (Room, Hive) con sincronización inteligente en segundo plano. Los datos permanecen seguros e interactivos aún sin conectividad.</p>
+              <p>Bases de datos locales seguras (Room, Hive) con sincronización inteligente en segundo plano según la conectividad del dispositivo.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ==========================================================================
-         App Development - Professional Timeline
-         ========================================================================== -->
-    <section class="section-container reveal-on-scroll" id="mobile-dev" style="border-top: 1px solid var(--border-color);">
-      <h2 class="timeline-title">Trayectoria Profesional y Enlaces Verificados</h2>
-      
+      <!-- Professional Timeline path -->
       <div class="timeline-path">
         <!-- Job 1 -->
         <div class="timeline-item">
@@ -247,27 +277,8 @@
             <span class="timeline-date">2020 - 2023</span>
             <h4>Android Developer Sr</h4>
             <span class="timeline-company">Qualtop (Gentera / Compartamos Banco)</span>
-            <p>Desarrollo desde cero del aplicativo de Banca Móvil y publicación exitosa. Implementación del módulo de contactos, transferencias y pago de servicios. Soporte integral al ecosistema de Crédito Grupal Digital.</p>
+            <p>Desarrollo desde cero del aplicativo de Banca Móvil y publicación exitosa. Implementación del módulo de contactos, transferencias y pago de servicios. Soporte integral al de Crédito Grupal Digital.</p>
             <a href="https://www.gentera.com.mx/" target="_blank" rel="noopener noreferrer" class="verified-link">
-              Visitar Sitio Oficial Verificado
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Job 5 -->
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass-card">
-            <span class="timeline-date">2019 - 2020</span>
-            <h4>Android Developer</h4>
-            <span class="timeline-company">Global Hitss (Telcel)</span>
-            <p>Soporte y diseño de nuevas funciones en la aplicación corporativa interna para la renovación de Planes Tarifarios. Integración experimental de Huawei Mobile Services (HMS) en entornos de producción.</p>
-            <a href="https://www.globalhitss.com/" target="_blank" rel="noopener noreferrer" class="verified-link">
               Visitar Sitio Oficial Verificado
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -281,12 +292,12 @@
     </section>
 
     <!-- ==========================================================================
-         Digital Marketing Section
+         Diseño y Marketing Digital Section
          ========================================================================== -->
     <section class="section-container reveal-on-scroll" id="marketing" style="border-top: 1px solid var(--border-color);">
       <div class="section-header">
-        <h2 class="section-title">Estudio Creativo y Marketing Digital</h2>
-        <p class="section-subtitle">No solo escribimos código, creamos identidades digitales completas que convierten y cautivan a tus audiencias.</p>
+        <h2 class="section-title">Diseño y Marketing Digital</h2>
+        <p class="section-subtitle">Fusionamos el arte visual clásico con herramientas de Inteligencia Artificial para crear impactos memorables y de alta conversión.</p>
       </div>
 
       <div class="marketing-grid">
@@ -302,7 +313,7 @@
             </div>
             <div class="service-info">
               <h3>Diseño Gráfico & Canva Pro</h3>
-              <p>Diseñamos piezas gráficas comerciales, mockups profesionales y banners publicitarios de alto impacto, garantizando una estética de marca impecable.</p>
+              <p>Identidades de marca, mockups comerciales y material promocional diseñado con la máxima fineza utilizando flujos Canva Pro y Photoshop.</p>
             </div>
           </div>
 
@@ -315,8 +326,8 @@
               </svg>
             </div>
             <div class="service-info">
-              <h3>Edición Fotográfica y Mejora con IA</h3>
-              <p>Procesamos y mejoramos imágenes de producto o retratos institucionales utilizando modelos de IA generativa de punta para lograr nitidez y luz impecables.</p>
+              <h3>Edición Fotográfica y Retoque IA</h3>
+              <p>Edición fina de luces, fondos, iluminación y correcciones de textura sobre fotografías de producto o corporativas aceleradas por IA local.</p>
             </div>
           </div>
 
@@ -335,8 +346,8 @@
               </svg>
             </div>
             <div class="service-info">
-              <h3>Animación & Vídeo IA</h3>
-              <p>Ideación y producción de micro-animaciones, vídeos explicativos y contenido cinemático optimizado para redes y conversiones impulsado por herramientas generativas.</p>
+              <h3>Creación de Animaciones y Videos</h3>
+              <p>Producción de animaciones promocionales, micro-videos comerciales de alto impacto y creativos enriquecidos por modelos generativos de IA.</p>
             </div>
           </div>
         </div>
@@ -354,7 +365,7 @@
             </div>
             <div class="floating-asset floating-asset-3">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m12 3-1.912 5.886H3.894l4.948 3.596L6.93 18.368 12 14.772l5.07 3.596-1.912-5.886 4.948-3.596h-6.194L12 3Z"></path></svg>
-              AI-Driven Design
+              AI Design
             </div>
           </div>
         </div>
@@ -362,12 +373,12 @@
     </section>
 
     <!-- ==========================================================================
-         Product Showcase & CasCam
+         Nuestras Apps (Showcase)
          ========================================================================== -->
     <section class="section-container reveal-on-scroll" id="showcase" style="border-top: 1px solid var(--border-color);">
       <div class="section-header">
-        <h2 class="section-title">Productos y Soluciones Propias</h2>
-        <p class="section-subtitle">Diseñamos plataformas disruptivas listas para ser desplegadas en negocios.</p>
+        <h2 class="section-title">Nuestras Apps y Productos Propios</h2>
+        <p class="section-subtitle">Creamos tecnología propietaria diseñada para potenciar la productividad y digitalizar procesos corporativos de inmediato.</p>
       </div>
 
       <div class="product-showcase">
@@ -415,7 +426,6 @@
                         <span>LIVE</span>
                       </div>
                       <div class="mockup-camera">
-                        <!-- Simulated scanner grid / box -->
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color: rgba(255, 255, 255, 0.2);">
                           <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
                         </svg>
@@ -472,33 +482,87 @@
     </section>
 
     <!-- ==========================================================================
-         Contact Form & Section
+         Clientes Section
+         ========================================================================== -->
+    <section class="section-container reveal-on-scroll" id="clientes" style="border-top: 1px solid var(--border-color);">
+      <div class="section-header">
+        <h2 class="section-title">Clientes & Empresas de Colaboración</h2>
+        <p class="section-subtitle">Hemos tenido el honor de colaborar e integrar soluciones tecnológicas directamente para marcas y ecosistemas de primer nivel.</p>
+      </div>
+
+      <div class="clients-grid">
+        <!-- Client card 1 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(186, 100%, 46%, 0.1);">TELCEL</div>
+          <h4>Telcel / Global Hitss</h4>
+          <span class="client-check">✓ Ecosistema Telecom</span>
+        </div>
+
+        <!-- Client card 2 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(262, 85%, 62%, 0.1);">LEGALARIO</div>
+          <h4>Legalario</h4>
+          <span class="client-check">✓ Firma Digital</span>
+        </div>
+
+        <!-- Client card 3 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(325, 90%, 55%, 0.1);">SOFTTEK</div>
+          <h4>Softtek</h4>
+          <span class="client-check">✓ Consultoría TI Global</span>
+        </div>
+
+        <!-- Client card 4 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(45, 95%, 50%, 0.1);">GENTERA</div>
+          <h4>Gentera / Compartamos</h4>
+          <span class="client-check">✓ Microfinanzas Bancarias</span>
+        </div>
+
+        <!-- Client card 5 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(150, 80%, 40%, 0.1);">LIVERPOOL</div>
+          <h4>Liverpool</h4>
+          <span class="client-check">✓ Retail / E-commerce</span>
+        </div>
+
+        <!-- Client card 6 -->
+        <div class="client-badge glass-card">
+          <div class="client-logo-avatar" style="background: hsla(210, 85%, 50%, 0.1);">OXXO</div>
+          <h4>Oxxo / Spin</h4>
+          <span class="client-check">✓ Fintech & Retail</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contacto Section
          ========================================================================== -->
     <section class="section-container reveal-on-scroll" id="contact" style="border-top: 1px solid var(--border-color);">
       <div class="section-header">
         <h2 class="section-title">Iniciemos un Proyecto</h2>
-        <p class="section-subtitle">¿Tienes una idea de aplicación móvil o necesitas optimizar la identidad visual de tu negocio? Escríbenos.</p>
+        <p class="section-subtitle">Contáctanos de inmediato. Atendemos requerimientos de desarrollo de apps desde cero, consultorías técnicas y campañas de diseño digital.</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-info-cards">
-          <!-- Info Card 1 -->
-          <div class="contact-info-card glass-card">
-            <div class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          <!-- WhatsApp Link -->
+          <a href="https://wa.me/525659058943" target="_blank" rel="noopener noreferrer" class="contact-link-card glass-card">
+            <div class="contact-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
               </svg>
             </div>
             <div>
-              <h4>Contacto Directo</h4>
+              <h4>WhatsApp Directo</h4>
               <p>+52 56 5905 8943</p>
             </div>
-          </div>
+          </a>
 
-          <!-- Info Card 2 -->
-          <div class="contact-info-card glass-card">
-            <div class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Email Link -->
+          <a href="mailto:israis007@gmail.com" class="contact-link-card glass-card">
+            <div class="contact-icon" style="background: rgba(186, 100%, 46%, 0.15); color: var(--accent-cyan);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m4 4 7.07 7.07a1.35 1.35 0 0 0 1.86 0L20 4"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"></rect>
               </svg>
@@ -507,19 +571,46 @@
               <h4>Correo Electrónico</h4>
               <p>israis007@gmail.com</p>
             </div>
-          </div>
+          </a>
 
-          <!-- Info Card 3 -->
-          <div class="contact-info-card glass-card">
-            <div class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
+          <!-- Telegram Link -->
+          <a href="https://t.me/+525659058943" target="_blank" rel="noopener noreferrer" class="contact-link-card glass-card">
+            <div class="contact-icon" style="background: rgba(0, 136, 204, 0.15); color: #0088cc;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
               </svg>
             </div>
             <div>
-              <h4>Ubicación</h4>
-              <p>México (100% Remoto)</p>
+              <h4>Telegram Directo</h4>
+              <p>+52 56 5905 8943</p>
+            </div>
+          </a>
+
+          <!-- Social links panel -->
+          <div class="social-links-container glass-card">
+            <h4>Nuestras Redes</h4>
+            <div class="social-icons-row">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/irisoftdevelopment/" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <!-- Instagram (Icono solo) -->
+              <a href="#" class="social-circle-btn" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <!-- TikTok (Icono solo) -->
+              <a href="#" class="social-circle-btn" aria-label="TikTok">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -536,8 +627,8 @@
           </div>
 
           <div class="form-group">
-            <label for="message" class="form-label">Háblanos de tu proyecto</label>
-            <textarea id="message" class="form-input" required minlength="10" placeholder="¿Qué solución móvil o digital necesitas desarrollar?"></textarea>
+            <label for="message" class="form-label">Háblanos de tu proyecto o vacante</label>
+            <textarea id="message" class="form-input" required minlength="10" placeholder="¿Qué solución necesitas? ¿Desarrollo desde cero, corregir bugs, vacantes de staffing...?"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta</button>
@@ -557,10 +648,11 @@
       </div>
       
       <div class="footer-links">
-        <a href="#about" class="footer-link">Quiénes Somos</a>
-        <a href="#mobile-dev" class="footer-link">Desarrollo Móvil</a>
-        <a href="#marketing" class="footer-link">Marketing Digital</a>
-        <a href="#showcase" class="footer-link">Productos</a>
+        <a href="#hero" class="footer-link">Inicio</a>
+        <a href="#colaboraciones" class="footer-link">Colaboraciones</a>
+        <a href="#marketing" class="footer-link">Diseño y Marketing</a>
+        <a href="#showcase" class="footer-link">Nuestras Apps</a>
+        <a href="#clientes" class="footer-link">Clientes</a>
       </div>
       
       <div class="footer-copy">
