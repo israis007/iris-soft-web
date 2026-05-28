@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "npx -y live-server --port=8080"
+  },
   "dependencies": {
     "firebase": "^12.13.0"
   }

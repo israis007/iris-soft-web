@@ -239,7 +239,7 @@ function initFormValidation() {
         </svg>
       </div>
       <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-family: var(--font-heading);">¡Mensaje Recibido!</h3>
-      <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.95rem;">Gracias por ponerte en contacto con Iris Soft. Analizaremos tu idea y nos comunicaremos contigo de inmediato para agendar una llamada.</p>
+      <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.95rem;">Gracias por ponerte en contacto con IRIsoft. Analizaremos tu idea y nos comunicaremos contigo de inmediato para agendar una llamada.</p>
       <button class="btn btn-primary" style="width: 100%;">Entendido</button>
     `;
 

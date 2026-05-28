@@ -377,8 +377,20 @@
     line-height: 1.15;
   }
 
-  .hero-accent {
+  .hero-title-base {
+    background: linear-gradient(to bottom, var(--text-primary) 30%, var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-accent-primary {
     background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-accent-secondary {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-magenta));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -436,6 +448,74 @@
   }
 
   /* ==========================================================================
+     Interactive Hero Service Cards
+     ========================================================================== */
+  .hero-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 2.5rem 0;
+    max-width: 650px;
+  }
+
+  .hero-service-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+
+  .hero-service-badge:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-soft), 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .badge-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition-smooth);
+  }
+
+  .badge-icon svg {
+    width: 28px !important;
+    height: 28px !important;
+    transition: var(--transition-smooth);
+  }
+
+  .hero-service-badge:hover .badge-icon {
+    background: var(--gradient-hero);
+    color: white !important;
+    border-color: transparent;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: var(--shadow-glow-indigo);
+  }
+
+  .hero-service-badge h5 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+  }
+
+  .hero-service-badge p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  /* ==========================================================================
      AI-Accelerated Banner
      ========================================================================== */
   .ai-banner-container {
@@ -445,13 +525,13 @@
   }
 
   .ai-banner {
-    padding: 2.5rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    padding: 3.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
     position: relative;
     overflow: hidden;
+    align-items: center;
   }
 
   .ai-banner::before {
@@ -465,7 +545,7 @@
   }
 
   .ai-banner-content {
-    max-width: 70vw;
+    max-width: 100%;
   }
 
   .ai-tag {
@@ -486,6 +566,73 @@
   .ai-banner-desc {
     font-size: 0.95rem;
     color: var(--text-secondary);
+  }
+
+  /* AI Logos Grid & Badges styling */
+  .ai-logos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .ai-logo-badge {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+
+  .ai-logo-badge span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition-smooth);
+  }
+
+  .ai-logo-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+  }
+
+  .ai-logo-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Hover dynamic effects */
+  .ai-logo-badge:hover {
+    transform: translateY(-4px) scale(1.05);
+    border-color: var(--badge-color) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), var(--badge-glow);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .ai-logo-badge:hover .ai-logo-icon {
+    color: white !important;
+    background: var(--badge-color) !important;
+    border-color: transparent !important;
+    box-shadow: var(--badge-glow) !important;
+  }
+
+  .ai-logo-badge:hover span {
+    color: var(--text-primary) !important;
   }
 
   /* ==========================================================================
@@ -1402,10 +1549,17 @@
       margin-right: auto;
     }
 
+    .hero-services-grid {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
     .ai-banner {
-      flex-direction: column;
+      grid-template-columns: 1fr;
       text-align: center;
       padding: 2.5rem 2rem;
+      gap: 2.5rem;
     }
 
     .ai-banner-content {
