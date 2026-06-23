@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npx -y live-server --port=8080"
+    "dev": "npx -y live-server --port=8080 --browser=chrome"
   },
   "dependencies": {
     "firebase": "^12.13.0"
