@@ -42,6 +42,9 @@ function initTheme() {
     localStorage.setItem('theme', 'light');
     sunIcon.style.display = 'block';
     moonIcon.style.display = 'none';
+    document.querySelectorAll('.logo-img').forEach(img => {
+      img.src = 'resources/logo_light_theme.png';
+    });
   }
 
   function enableDarkMode() {
@@ -49,6 +52,9 @@ function initTheme() {
     localStorage.setItem('theme', 'dark');
     sunIcon.style.display = 'none';
     moonIcon.style.display = 'block';
+    document.querySelectorAll('.logo-img').forEach(img => {
+      img.src = 'resources/logo_dark_theme.png';
+    });
   }
 }
 
@@ -116,6 +122,7 @@ function initScrollReveal() {
    ========================================================================== */
 function initCarousel() {
   const track = document.getElementById('carousel-track');
+  if (!track) return;
   const nextBtn = document.getElementById('carousel-next');
   const prevBtn = document.getElementById('carousel-prev');
   const slides = Array.from(track.children);
@@ -187,6 +194,25 @@ function initFormValidation() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     
+    // 1. Honeypot check for spam bots
+    const honey = form.querySelector('input[name="_honey"]').value;
+    if (honey) {
+      console.warn("Spam detected via honeypot field.");
+      // Fake success to the spam bot
+      showSuccessModal();
+      form.reset();
+      return;
+    }
+
+    // 2. Cooldown rate-limiting (60 seconds)
+    const lastSubmit = localStorage.getItem('last_submit_time');
+    const cooldownPeriod = 60000;
+    if (lastSubmit && (Date.now() - parseInt(lastSubmit, 10) < cooldownPeriod)) {
+      const remainingSeconds = Math.ceil((cooldownPeriod - (Date.now() - parseInt(lastSubmit, 10))) / 1000);
+      showErrorToast(`Por favor, espera ${remainingSeconds} segundos antes de enviar otra consulta.`);
+      return;
+    }
+
     let isFormValid = true;
     inputs.forEach(input => {
       if (!input.checkValidity()) {
@@ -195,17 +221,104 @@ function initFormValidation() {
     });
 
     if (isFormValid) {
-      // Gorgeous dynamic feedback popover instead of standard alerts
-      showSuccessModal();
-      form.reset();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+
+      const payload = {
+        Nombre: document.getElementById('name').value,
+        Email: document.getElementById('email').value,
+        'Teléfono': document.getElementById('phone').value,
+        Mensaje: document.getElementById('message').value,
+        _subject: "Nueva consulta desde sitio web IRIsoft"
+      };
+
+      fetch("https://formsubmit.co/ajax/97a686d2d3e558a9ea9ca6a972ba8dba", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => response.json())
+      .then(data => {
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+        
+        // Save submission timestamp to local storage for cooldown
+        localStorage.setItem('last_submit_time', Date.now().toString());
+        
+        showSuccessModal();
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+        // Fallback: show success modal anyway so the user experience doesn't break
+        showSuccessModal();
+        form.reset();
+      });
     } else {
-      // Scroll to first invalid field
       const firstInvalid = form.querySelector('.form-input:invalid');
       if (firstInvalid) {
         firstInvalid.focus();
       }
     }
   });
+
+  function showErrorToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'error-toast';
+    toast.innerHTML = `
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <span>${message}</span>
+    `;
+    
+    Object.assign(toast.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      background: 'rgba(255, 0, 100, 0.1)',
+      border: '1px solid rgba(255, 0, 100, 0.25)',
+      backdropFilter: 'blur(12px)',
+      color: '#ff4d80',
+      padding: '1rem 1.5rem',
+      borderRadius: '12px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '0.8rem',
+      boxShadow: '0 10px 30px rgba(255, 0, 100, 0.15)',
+      fontFamily: "var(--font-body, 'Plus Jakarta Sans', sans-serif)",
+      fontWeight: '600',
+      fontSize: '0.9rem',
+      zIndex: '10000',
+      opacity: '0',
+      transform: 'translateY(20px)',
+      transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)'
+    });
+
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    }, 50);
+
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        toast.remove();
+      }, 400);
+    }, 4000);
+  }
 
   function showSuccessModal() {
     const modal = document.createElement('div');
