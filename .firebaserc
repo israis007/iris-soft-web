@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "panificadora-donbeto"
+  },
+  "targets": {
+    "panificadora-donbeto": {
+      "hosting": {
+        "iris-main": [
+          "irisoft-main"
+        ]
+      }
+    }
+  }
+}

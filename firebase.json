@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "site": "irisoft-main",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "scratch/**",
+      "graphify-out/**",
+      ".agents/**",
+      ".cursor/**",
+      "package.json",
+      "package-lock.json",
+      "README.md"
+    ],
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=3600"
+          }
+        ]
+      }
+    ]
+  }
+}
