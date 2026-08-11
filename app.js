@@ -157,7 +157,20 @@ function initCarousel() {
     updateCarousel();
   });
 
-  // Listen to manual scrolling to update current index
+  // Keep the controls in sync when a visitor swipes or drags the carousel.
+  let scrollTimeout;
+  track.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      currentIdx = Math.max(0, Math.min(
+        slides.length - 1,
+        Math.round(track.scrollLeft / (slideWidth + 32))
+      ));
+    }, 80);
+  }, { passive: true });
+
+  // Recalculate the target after a viewport change.
   let resizeTimeout;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);

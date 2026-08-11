@@ -1,0 +1,13 @@
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Keep product pages under the same IRIsoft domain.
+RewriteRule ^easy-pos-lan$ /easy-pos-lan/ [R=301,L]
+RewriteRule ^pos-estudio$ /pos-estudio/ [R=301,L]
+
+# Friendly aliases kept for old links and campaign URLs.
+RewriteRule ^easypos/?$ /easy-pos-lan/ [R=301,L]
+RewriteRule ^api-studio/?$ /pos-estudio/ [R=301,L]
+

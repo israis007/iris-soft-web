@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08152f">
+  <meta name="description" content="Easy POS LAN: el punto de venta offline-first para restaurantes, retail y negocios que necesitan seguir vendiendo.">
+  <meta property="og:title" content="Easy POS LAN | Vende sin depender del internet">
+  <meta property="og:description" content="Catálogo, mesas, pedidos y reportes sincronizados por LAN, con nube opcional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://irisoft.com.mx/easy-pos-lan/">
+  <meta property="og:image" content="https://irisoft.com.mx/easy-pos-lan/assets/icon-2048.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://irisoft.com.mx/easy-pos-lan/assets/icon-2048.png">
+  <link rel="canonical" href="https://irisoft.com.mx/easy-pos-lan/">
+  <link rel="icon" type="image/png" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="landing.css">
+  <title>Easy POS LAN | Punto de venta offline-first</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Easy POS LAN",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android, iOS",
+      "description": "Punto de venta offline-first con sincronización por red local y nube opcional.",
+      "brand": {"@type": "Brand", "name": "IRIsoft"}
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Easy POS LAN, inicio">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span>easy<span>pos</span> <small>LAN</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="/" aria-label="Volver a IRIsoft">IRIsoft</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#arquitectura">Cómo funciona</a>
+      <a href="#negocios">Para tu negocio</a>
+      <a href="/pos-estudio/">POS Estudio</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Modo claro</span>
+      </button>
+      <a class="nav-cta" href="#demo">Preparar piloto <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Punto de venta pensado para operar</p>
+        <h1>Vende aunque el internet <em>se vaya.</em></h1>
+        <p class="hero-lead">Easy POS LAN mantiene tu operación viva en la red local: catálogo, comandas, mesas, cobros y tickets sincronizados. La nube suma escala cuando la necesitas.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#funciones">Explorar funciones <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#arquitectura">Ver la arquitectura <span aria-hidden="true">⌁</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Beneficios principales">
+          <span><strong>LAN-first</strong> sin depender de señal</span>
+          <span><strong>Multi-negocio</strong> desde un mismo ecosistema</span>
+        </div>
+      </div>
+
+      <div class="product-stage" aria-label="Vista previa del panel de Easy POS LAN">
+        <div class="glow glow-one" aria-hidden="true"></div>
+        <div class="glow glow-two" aria-hidden="true"></div>
+        <div class="dashboard-card">
+          <div class="dash-topbar"><span class="dash-logo"><i></i> easypos</span><span class="live-state"><b></b> LAN activa</span></div>
+          <div class="dash-content">
+            <div class="dash-heading"><div><small>Resumen del turno</small><strong>Hoy, 31 julio</strong></div><span class="avatar">IR</span></div>
+            <div class="metric-row">
+              <div class="metric metric-blue"><span>Ventas del día</span><strong>$18,450</strong><small>+18.4% vs. ayer</small></div>
+              <div class="metric metric-lilac"><span>Comandas abiertas</span><strong>12</strong><small>4 mesas activas</small></div>
+            </div>
+            <div class="dash-section-title"><span>Actividad reciente</span><small>Ver todo →</small></div>
+            <div class="order-row"><span class="order-icon taco">⌁</span><div><strong>Mesa 04 · Consumo</strong><small>Hace 2 min · Mesero Ana</small></div><b>$640.00</b></div>
+            <div class="order-row"><span class="order-icon drink">✦</span><div><strong>Ticket #0087 · Mostrador</strong><small>Hace 8 min · Impreso</small></div><b>$285.00</b></div>
+            <div class="sync-bar"><span class="sync-icon">↻</span><span>Última sincronización</span><strong>Ahora</strong></div>
+          </div>
+        </div>
+        <div class="floating-note note-sync"><span>✓</span><div><strong>Todo guardado</strong><small>Sin internet también</small></div></div>
+        <div class="floating-note note-ticket"><span>▤</span><div><strong>Ticket listo</strong><small>Bluetooth conectado</small></div></div>
+      </div>
+    </section>
+
+    <div class="signal-strip" aria-label="Capacidades de la plataforma">
+      <div><span class="signal-icon">◉</span><strong>Offline-first</strong><small>Tu operación no se detiene</small></div>
+      <div><span class="signal-icon">⌘</span><strong>LAN sincronizada</strong><small>Maestro y meseros en tiempo real</small></div>
+      <div><span class="signal-icon">▣</span><strong>Tickets flexibles</strong><small>PDF, QR e impresión térmica</small></div>
+      <div><span class="signal-icon">↗</span><strong>Cloud opcional</strong><small>Crece a tu propio ritmo</small></div>
+    </div>
+
+    <section class="content-section section-wrap" id="funciones">
+      <div class="section-heading"><p class="eyebrow">Todo lo que tu operación necesita</p><h2>Menos fricción. Más control.</h2><p>Una base sólida para restaurantes, cafeterías, retail y negocios que no quieren elegir entre rapidez y orden.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-card-dark"><span class="feature-number">01</span><span class="feature-icon">▦</span><h3>Catálogo que sí conoce tu negocio</h3><p>Productos con tamaños, precios, ingredientes, horarios, promociones y existencias. Configúralos una vez y úsalos en todos tus dispositivos.</p><a href="#demo">Configurar catálogo <span>→</span></a></article>
+        <article class="feature-card"><span class="feature-number">02</span><span class="feature-icon blue">⌂</span><h3>Mesas y comandas sin vueltas</h3><p>El mesero levanta pedidos desde su dispositivo, los envía al maestro y mantiene la cuenta viva aunque la conexión externa falle.</p><a href="#arquitectura">Ver flujo LAN <span>→</span></a></article>
+        <article class="feature-card"><span class="feature-number">03</span><span class="feature-icon orange">▤</span><h3>Tickets a tu manera</h3><p>Diseña la plantilla, agrega logo, mesa, folio, fecha y totales. Imprime por Bluetooth o entrega una versión digital en PDF.</p><a href="#demo">Diseñar ticket <span>→</span></a></article>
+        <article class="feature-card"><span class="feature-number">04</span><span class="feature-icon green">⌁</span><h3>Reportes para decidir mejor</h3><p>Ventas por día, mesero, producto y forma de pago. Registra efectivo, transferencias y cobros mixtos sin perder el rastro.</p><a href="#negocios">Conocer reportes <span>→</span></a></article>
+        <article class="feature-card"><span class="feature-number">05</span><span class="feature-icon violet">⌑</span><h3>Menú QR que cambia contigo</h3><p>Publica el menú del día con productos y horarios disponibles. Ideal para mesas, sucursales y clientes que prefieren escanear.</p><a href="#demo">Ver menú QR <span>→</span></a></article>
+        <article class="feature-card"><span class="feature-number">06</span><span class="feature-icon pink">✦</span><h3>Un ecosistema, varios negocios</h3><p>Empieza en LAN y añade nube, sucursales, membresías y almacenes compartidos cuando el negocio lo pida.</p><a href="#negocios">Explorar crecimiento <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="arquitectura">
+      <div class="section-wrap architecture-inner">
+        <div class="architecture-copy"><p class="eyebrow light">Diseñado para el mundo real</p><h2>Una red local para trabajar. La nube para crecer.</h2><p>El dispositivo maestro concentra la operación y los equipos esclavos reciben el catálogo y envían comandas por la red del negocio. Cuando hay internet, sincronizas lo que quieras con tus servicios cloud.</p><a class="text-link light-link" href="#demo">Quiero verlo en acción <span>→</span></a></div>
+        <div class="flow-diagram" aria-label="Flujo de información de Easy POS LAN">
+          <div class="flow-node node-master"><span>◆</span><strong>Maestro</strong><small>Catálogo · caja · reportes</small></div>
+          <div class="flow-line"><i></i><small>LAN segura</small><i></i></div>
+          <div class="flow-slaves"><div class="flow-node"><span>◌</span><strong>Mesero 01</strong><small>Comandas</small></div><div class="flow-node"><span>◌</span><strong>Mesero 02</strong><small>Pedidos</small></div></div>
+          <div class="cloud-node"><span>☁</span><div><strong>Cloud opcional</strong><small>Backups · menú QR · multi-sucursal</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="negocios">
+      <div class="split-section"><div class="section-heading"><p class="eyebrow">Crece sin cambiar de sistema</p><h2>Un POS que se adapta a tu giro.</h2><p>Comienza con lo esencial y activa las piezas que necesitas conforme tu operación madura.</p></div><div class="business-list"><div><span class="business-icon">✦</span><strong>Restaurantes y cafeterías</strong><small>Mesas, modificadores, cocina y menú por horario.</small></div><div><span class="business-icon">◇</span><strong>Retail y boutiques</strong><small>Variantes, tallas, inventario y venta a granel.</small></div><div><span class="business-icon">◫</span><strong>Multi-sucursal SaaS</strong><small>Negocios separados, reportes propios y nube opcional.</small></div></div></div>
+      <div class="limits-card"><div><span class="limits-label">Empieza ligero</span><h3>La operación que necesitas hoy, lista para escalar mañana.</h3></div><div class="limit-stat"><strong>9</strong><small>mesas en el plan inicial</small></div><div class="limit-stat accent"><strong>200</strong><small>mesas en el plan de crecimiento</small></div></div>
+    </section>
+
+    <section class="demo-section section-wrap" id="demo"><div class="demo-card"><div><p class="eyebrow light">Siguiente paso</p><h2>Haz que tu primer piloto se sienta como producto terminado.</h2><p>Valida tu flujo con un catálogo real, una impresora y tu equipo. La base ya está lista para crecer contigo.</p></div><a class="button button-white" href="#footer">Preparar mi piloto <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-main section-wrap"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">E</span><span>easy<span>pos</span> <small>LAN</small></span></a><p>Operación local. Crecimiento global.</p></div><div class="footer-links"><div><strong>Producto</strong><a href="#funciones">Funciones</a><a href="#arquitectura">Arquitectura</a><a href="#negocios">Negocios</a><a href="/">IRIsoft</a><a href="/pos-estudio/">POS Estudio</a></div><div><strong>Legal</strong><a href="/easy-pos-lan/legal/privacidad">Privacidad</a><a href="/easy-pos-lan/legal/terminos">Términos</a><a href="/easy-pos-lan/legal/soporte">Soporte</a></div></div></div>
+    <div class="footer-bottom section-wrap"><span>© 2026 IRIsoft. Easy POS LAN.</span><span>Construido para vender con confianza.</span></div>
+  </footer>
+  <script src="landing.js" defer></script>
+</body>
+</html>
